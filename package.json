@@ -64,8 +64,7 @@
     "react-router": "^2.6.1"
   },
   "scripts": {
-    "dist": "node ./scripts/dist.js",
-    "postinstall": "node ./scripts/postinstall.js"
+    "start": "node server.js"
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"
