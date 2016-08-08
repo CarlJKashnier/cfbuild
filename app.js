@@ -9,7 +9,7 @@ var MongoStore = require('connect-mongostore')(session);
 
 require('./passport.js');
 
-mongoose.connect(process.env.MONGOLAB_URI,{authMechanism: 'ScramSHA1'});
+mongoose.connect(process.env.MONGOLAB_URI);
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
     extended: false
