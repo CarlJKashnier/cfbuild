@@ -1,7 +1,6 @@
 {
-  "name": "Awesome",
-  "version": "0.0.1",
-  "private": true,
+  "name": "curatedfiction",
+  "version": "1.0.0",
   "devDependencies": {
     "babel-eslint": "6.1.2",
     "eslint": "3.1.1",
@@ -44,16 +43,10 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "babel-plugin-syntax-trailing-function-commas": "^6.8.0",
-    "babel-plugin-transform-class-properties": "^6.11.5",
-    "babel-plugin-transform-object-rest-spread": "^6.8.0",
-    "babel-plugin-transform-react-constant-elements": "^6.9.1",
     "body-parser": "^1.15.2",
     "connect-mongostore": "^0.1.4",
-    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
-    "mongo": "^0.1.0",
     "mongodb": "^2.2.5",
     "mongoose": "^4.5.8",
     "morgan": "^1.7.0",
@@ -66,8 +59,5 @@
   },
   "scripts": {
     "start": "node server.js"
-  },
-  "eslintConfig": {
-    "extends": "./config/eslint.js"
   }
 }
