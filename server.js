@@ -29,7 +29,7 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(express.static('./build'));
+app.use(express.static('./public'));
 //app.set('view engine', 'ejs');
 require('./routes.js')(app, passport);
 require('./passport.js')(passport);
