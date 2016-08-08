@@ -59,6 +59,6 @@
   },
   "engine": "node 6.3.1",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   }
 }
