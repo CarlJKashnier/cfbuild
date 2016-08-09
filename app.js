@@ -24,7 +24,8 @@ app.use(session({
     }),
     secret: 'anystringoftext',
     saveUninitialized: true,
-    resave: true
+    resave: true,
+    auto_reconnect:true
 }));
 app.use(passport.initialize());
 app.use(passport.session());
