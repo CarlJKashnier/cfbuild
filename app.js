@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
+console.log("session")
 app.use(session({
     cookie: {
         maxAge: 691200000
@@ -28,6 +29,7 @@ app.use(session({
     resave: true,
     auto_reconnect:true
 }));
+console.log("session")
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static('./public'));
