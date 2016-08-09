@@ -1,4 +1,4 @@
-require('dotenv').load()
+
 var express = require('express');
 var app = express();
 var passport = require('passport');
@@ -10,7 +10,7 @@ var MongoStore = require('connect-mongostore')(session);
 
 require('./passport.js');
 console.log("mongoose connect next")
-mongoose.connect(process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 console.log("Mongoose connect prev")
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
