@@ -54,7 +54,7 @@ app.post('/api/addCurio', function(req, res) {
 
 
 
-//mongoose.connect(process.env.MONGOLAB_URI);
+mongoose.connect(process.env.MONGOLAB_URI);
 var newCurio = new CurioSchema({
   title: req.body.title,
   description: req.body.description,
