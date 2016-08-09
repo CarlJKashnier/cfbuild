@@ -8,8 +8,9 @@ var bodyParser = require('body-parser');
 var MongoStore = require('connect-mongostore')(session);
 
 require('./passport.js');
-
+console.log("mongoose connect next")
 mongoose.connect(process.env.MONGOLAB_URI);
+console.log("Mongoose connect prev")
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
     extended: false
